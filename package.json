@@ -1,0 +1,28 @@
+{
+  "name": "webstela-contracts",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy-goerli": "TARGET_NETWORK=goerli npx hardhat run --network goerli scripts/deploy.ts --show-stack-traces",
+    "verify-goerli": "TARGET_NETWORK=goerli npx hardhat verify --network goerli 0x4d4362a79b5c81d59e4fd962ec6d85e819f78799 0xe091133fbe05e6fc235c9780afa2bfca6836f989 --show-stack-traces",
+    "test": "GAS_REPORTER=true npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "watch": "gow -e sol,ts -l -g npx hardhat coverage",
+    "fix": "npx eslint . --fix",
+    "lint": "npx eslint ."
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@openzeppelin/contracts": "^4.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "hardhat": "^2.14.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^2.8.7"
+  }
+}

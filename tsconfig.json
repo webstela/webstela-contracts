@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "rootDirs": [
+        "hardhat.config.ts",
+        "./scripts",
+        "./test"
+    ],
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "truffle-config.js",
+    "migrations",
+  ]
+}
